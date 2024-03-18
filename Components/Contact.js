@@ -7,6 +7,8 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
 
 const Contact = () => {
+  const isDevelopment = process.env.NODE_ENV !== "development";
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -20,7 +22,7 @@ const Contact = () => {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="/assets/contact.jpg"
+                  src={`${isDevelopment ? imgBasePath : ""}/assets/contact.jpg`}
                   width={400}
                   height={10}
                   alt="/"

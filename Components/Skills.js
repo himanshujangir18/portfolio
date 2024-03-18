@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 const Skills = () => {
+  const isDevelopment = process.env.NODE_ENV !== "development";
+
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -14,7 +16,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/html.png"
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/html.png`}
                   alt="HTML"
                   height="64"
                   width="64"
@@ -29,7 +33,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/css.png"
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/css.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -44,7 +50,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/bootstrap.png"
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/bootstrap.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -59,7 +67,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/tailwind.png"
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/tailwind.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -74,7 +84,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/javascript.png"
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/javascript.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -89,7 +101,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/ts.png"
+                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/ts.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -104,7 +116,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/react.png"
+                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/react.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -120,7 +132,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/nextjs.png"
+                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/nextjs.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -136,7 +148,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/assets/skills/github.png"
+                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/github.png`}
                   alt="/"
                   height="64"
                   width="64"

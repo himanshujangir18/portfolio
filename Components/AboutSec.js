@@ -1,7 +1,10 @@
+import { imgBasePath } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
 const AboutSec = () => {
+  const isDevelopment =  process.env.NODE_ENV !== "development";
+
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w[1240px] m-auto md:grid grid-cols-3 gap-8 p-10">
@@ -32,7 +35,7 @@ const AboutSec = () => {
         </div>
         <div className="w-full h-auto m-auto shadow-xl  shadow-gray-400 rounded-xl flex items-center justify-center p-5 hover:scale-105 ease-in duration-300">
           <Image
-            src="/assets/about.jpg"
+            src={`${isDevelopment ? imgBasePath : ""}/assets/about.jpg`}
             width={400}
             height={10}
             alt="About Image"
