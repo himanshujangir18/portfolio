@@ -12,7 +12,7 @@ const Main = () => {
           </p>
           <h1 className="text-gray-700 py-4 text-4xl sm:text-5xl md:text-6xl font-bold">
             Hi, I'm
-            <span className="text-[#5651e5] font-[Gill-Sans] pl-2 ">
+            <span className="text-[#5651e5] font-[Gill-Sans] pl-2">
               Himanshu
             </span>
           </h1>

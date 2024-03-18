@@ -32,17 +32,17 @@ const Navbar = () => {
           : "fixed z-[100] w-full h-20"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="backdrop-blur-2xl flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="flex flex-col items-center justify-center gap-0 cursor-pointer">
           <Link href="/#home">
             <h1 className=" text-[#5651e5] tracking-widest text-[50px]">HJ</h1>
           </Link>
         </div>
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden font-bold md:flex">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b duration-150">
-                Home
+              <li className="ml-10 text-xl uppercase hover:border-b duration-150">
+                <span className="text-[#5651e5]">h</span>ome
               </li>
             </Link>
             <Link href="/#about">
@@ -56,8 +56,8 @@ const Navbar = () => {
               </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b duration-150">
-                Projects
+              <li className="ml-10 text-xl uppercase hover:border-b duration-150">
+                Pro<span className="text-[#5651e5]">j</span>ects
               </li>
             </Link>
             <Link href="/#contact">

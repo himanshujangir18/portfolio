@@ -89,7 +89,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
-                    className="border-2 rounded-lg flex p-3 border-gray-300"
+                    className="caret-[#5651e5] border-2 rounded-lg flex p-3 border-gray-300"
                     rows="10"
                   ></textarea>
                 </div>
