@@ -12,22 +12,22 @@ const Project = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItems
             title="Property Finder"
-            bgImage={"/assets/projects/property.jpg"}
+            bgImage={"/assets/Projects/property.jpg"}
             ProjectUrl="/property"
           />
           <ProjectItems
             title="Crypto App"
-            bgImage={"/assets/projects/crypto.jpg"}
+            bgImage={"/assets/Projects/crypto.jpg"}
             ProjectUrl="/Crypto"
           />
           <ProjectItems
             title="Netflix Clone"
-            bgImage={"/assets/projects/netflix.jpg"}
+            bgImage={"/assets/Projects/netflix.jpg"}
             ProjectUrl="/Netflix"
           />
           <ProjectItems
             title="Twitch Clone"
-            bgImage={"/assets/projects/twitch.jpg"}
+            bgImage={"/assets/Projects/twitch.jpg"}
             ProjectUrl="/Twitch"
           />
         </div>
