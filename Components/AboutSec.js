@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import AboutImage from "../pages/assets/about.jpg";
 
 const AboutSec = () => {
   return (
@@ -28,11 +27,16 @@ const AboutSec = () => {
             technologies.
           </p>
           <p className="text-gray=600 py-2 underline cursor-pointer">
-            Checkout somem of my lastest projects
+            Checkout some of my lastest projects
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl  shadow-gray-400 rounded-xl flex items-center justify-center p-5 hover:scale-105 ease-in duration-300">
-          <Image src={AboutImage} alt="About Image" />
+          <Image
+            src="/assets/about.jpg"
+            width={400}
+            height={10}
+            alt="About Image"
+          />
         </div>
       </div>
     </div>

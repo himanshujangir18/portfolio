@@ -1,9 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import PropertyImg from "../pages/assets/Projects/property.jpg";
-import CryptoImg from "../pages/assets/Projects/crypto.jpg";
-import NetflixImg from "../pages/assets/Projects/netflix.jpg";
-import TwitchImg from "../pages/assets/Projects/twitch.jpg";
 import ProjectItems from "./ProjectItems";
 
 const Project = () => {
@@ -17,22 +13,22 @@ const Project = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItems
             title="Property Finder"
-            bgImage={PropertyImg}
+            bgImage={"/assets/projects/property.jpg"}
             ProjectUrl="/property"
           />
           <ProjectItems
             title="Crypto App"
-            bgImage={CryptoImg}
+            bgImage={"/assets/projects/crypto.jpg"}
             ProjectUrl="/Crypto"
           />
           <ProjectItems
             title="Netflix Clone"
-            bgImage={NetflixImg}
+            bgImage={"/assets/projects/netflix.jpg"}
             ProjectUrl="/Netflix"
           />
           <ProjectItems
             title="Twitch Clone"
-            bgImage={TwitchImg}
+            bgImage={"/assets/projects/twitch.jpg"}
             ProjectUrl="/Twitch"
           />
         </div>
