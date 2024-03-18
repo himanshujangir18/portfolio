@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { imgBasePath } from "@/constants";
 
 const Skills = () => {
   const isDevelopment = process.env.NODE_ENV !== "development";
@@ -101,7 +102,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/ts.png`}
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/ts.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -116,7 +119,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/react.png`}
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/react.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -132,7 +137,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/nextjs.png`}
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/nextjs.png`}
                   alt="/"
                   height="64"
                   width="64"
@@ -148,7 +155,9 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={`${isDevelopment ? imgBasePath : ""}/assets/skills/github.png`}
+                  src={`${
+                    isDevelopment ? imgBasePath : ""
+                  }/assets/skills/github.png`}
                   alt="/"
                   height="64"
                   width="64"

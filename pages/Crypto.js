@@ -3,6 +3,7 @@ import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import { TbArrowBackUpDouble } from "react-icons/tb";
+import { imgBasePath } from "@/constants";
 
 const Crypto = () => {
   const isDevelopment = process.env.NODE_ENV !== "development";

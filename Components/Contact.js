@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import ContactImg from "../pages/assets/contact.jpg";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import { imgBasePath } from "@/constants";
 
 const Contact = () => {
   const isDevelopment = process.env.NODE_ENV !== "development";

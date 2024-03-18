@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { imgBasePath } from "@/constants";
 
 const ProjectItems = ({ title, bgImage, ProjectUrl }) => {
   const isDevelopment = process.env.NODE_ENV !== "development";
